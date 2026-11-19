@@ -60,7 +60,7 @@ export const empresa = {
     {
       nome: "Daniel Vorcaro",
       cargo: "Analista de Segurança da Informação.",
-      foto: "/images/Daniel-Vorcaro",
+      foto: "/images/Daniel-Vorcaro.jpeg",
       alt: "Foto de Daniel Vorcaro",
       descricao: "Responsável pela proteção dos dados e sistemas da empresa, implementando medidas de segurança, monitoramento e prevenção contra ameaças digitais."
     }
