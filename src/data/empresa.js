@@ -63,6 +63,13 @@ export const empresa = {
       foto: "/images/Daniel-Vorcaro.jpeg",
       alt: "Foto de Daniel Vorcaro",
       descricao: "Responsável pela proteção dos dados e sistemas da empresa, implementando medidas de segurança, monitoramento e prevenção contra ameaças digitais."
+    },
+    {
+      nome: "Luciano Hang",
+      cargo: "Analista de Gestão e Estratégias Empresariais.",
+      foto: "/images/Luciano-Hang.png",
+      alt: "Foto de Luciano Hang",
+      descricao: "Responsável pela análise de estratégias empresariais, gestão de negócios e avaliação de oportunidades de mercado, contribuindo para o crescimento e desenvolvimento da empresa."
     }
   ]
 };
