@@ -29,8 +29,14 @@
 
   /* Variáveis Estruturais */
   --borda-raio: 8px;
-  --sombra-cartao: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  --sombra-cartao-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --sombra-cartao:
+    0 12px 24px -12px rgba(6, 37, 64, 0.28),
+    0 4px 8px -4px rgba(6, 37, 64, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --sombra-cartao-hover:
+    0 20px 32px -16px rgba(6, 37, 64, 0.38),
+    0 8px 14px -6px rgba(6, 37, 64, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
   --espacamento-secao: 4rem;
 }
 

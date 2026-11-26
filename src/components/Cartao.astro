@@ -8,16 +8,18 @@ const { destaque } = Astro.props;
 
 <style>
 	.cartao {
-		background-color: var(--cor-fundo);
-		border: 1px solid var(--cor-borda);
+		background: linear-gradient(145deg, #ffffff 0%, #eaf1f7 100%);
+		border: 1px solid rgba(6, 37, 64, 0.12);
 		border-radius: var(--borda-raio);
 		padding: 2rem;
 		box-shadow: var(--sombra-cartao);
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
+		transform: perspective(900px) translateZ(0) rotateX(0);
+		transform-style: preserve-3d;
+		transition: transform 0.25s ease, box-shadow 0.25s ease;
 	}
 
 	.cartao:hover {
-		transform: translateY(-4px);
+		transform: perspective(900px) translateY(-7px) translateZ(12px) rotateX(1deg);
 		box-shadow: var(--sombra-cartao-hover);
 	}
 
