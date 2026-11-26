@@ -41,6 +41,20 @@ import { empresa } from '../data/empresa.js';
 		margin-bottom: 3rem;
 	}
 
+	.cabecalho-secao h1::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		margin-top: 0.75rem;
+		border-radius: 2px;
+		background: var(--degrade-marca);
+	}
+
+	.cabecalho-secao h1 {
+		width: fit-content;
+	}
+
 	.cabecalho-secao p {
 		font-size: 1.125rem;
 		color: var(--cor-texto-secundario);
@@ -50,6 +64,14 @@ import { empresa } from '../data/empresa.js';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2rem;
+	}
+
+	.grid-contato :global(.cartao) {
+		border-top: 3px solid var(--cor-secundaria);
+	}
+
+	.grid-contato :global(.cartao):nth-child(2) {
+		border-top-color: var(--cor-secundaria);
 	}
 
 	.grid-contato h2 {

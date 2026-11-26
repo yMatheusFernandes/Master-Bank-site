@@ -50,6 +50,20 @@ import { empresa } from '../data/empresa.js';
 		max-width: 800px;
 	}
 
+	.bloco-texto h1::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		margin-top: 0.75rem;
+		border-radius: 2px;
+		background: var(--degrade-marca);
+	}
+
+	.bloco-texto h1 {
+		width: fit-content;
+	}
+
 	.historia {
 		font-size: 1.125rem;
 		color: var(--cor-texto-secundario);
@@ -59,6 +73,10 @@ import { empresa } from '../data/empresa.js';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2rem;
+	}
+
+	.grid-missao-visao :global(.cartao) {
+		border-top: 3px solid var(--cor-secundaria);
 	}
 
 	.grid-missao-visao h2 {
@@ -74,6 +92,10 @@ import { empresa } from '../data/empresa.js';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 2rem;
+	}
+
+	.grid-valores :global(.cartao-destaque) {
+		border-top-color: var(--cor-secundaria);
 	}
 
 	.grid-valores h3 {

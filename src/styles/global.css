@@ -1,19 +1,19 @@
 /* src/styles/global.css */
 :root {
-  /* Paleta de Cores baseada no Logo */
-  --cor-primaria: #0d1520; /* Quase preto */
-  --cor-secundaria: #0058ec; /* Azul escuro do degradê (links e botões) */
-  --cor-destaque: #008ff7; /* Azul claro do degradê (decorativo) */
-  --cor-fundo: #ffffff;
-  --cor-fundo-alt: #f8fafc;
-  --cor-texto: #334155;
-  --cor-texto-secundario: #64748b;
-  --cor-texto-invertido: #ffffff;
-  --cor-texto-invertido-suave: #cbd5e1;
-  --cor-borda: #e2e8f0;
+  /* Identidade visual da Master Bank */
+  --cor-primaria: #062540;
+  --cor-secundaria: #3D80D9;
+  --cor-destaque: #04BFBF;
+  --cor-fundo: #F2F2F2;
+  --cor-fundo-alt: #ffffff;
+  --cor-texto: #062540;
+  --cor-texto-secundario: #062540;
+  --cor-texto-invertido: #F2F2F2;
+  --cor-texto-invertido-suave: #F2F2F2;
+  --cor-borda: rgba(6, 37, 64, 0.15);
   
   /* Variável para o Hero */
-  --cor-hero-fim: #00224d;
+  --cor-hero-fim: #138AF2;
 
   /* Degradês Globais */
   --degrade-marca: linear-gradient(

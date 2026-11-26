@@ -32,7 +32,7 @@ const anoAtual = new Date().getFullYear();
 	}
 
 	.faixa-topo {
-		height: 4px;
+		height: 5px;
 		background: var(--degrade-marca);
 	}
 
@@ -40,8 +40,9 @@ const anoAtual = new Date().getFullYear();
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		align-items: flex-start;
 		gap: 2rem;
-		padding: 3rem 1.5rem;
+		padding: 3.5rem 1.5rem;
 	}
 
 	.rodape-marca h2 {
@@ -49,10 +50,25 @@ const anoAtual = new Date().getFullYear();
 		margin-bottom: 0.5rem;
 	}
 
+	.rodape-marca h2::after {
+		content: '';
+		display: block;
+		width: 3rem;
+		height: 3px;
+		margin-top: 0.75rem;
+		border-radius: 2px;
+		background: var(--degrade-marca);
+	}
+
 	.rodape-marca p, .rodape-contato p {
-		color: var(--cor-texto-invertido-suave);
+		color: rgba(242, 242, 242, 0.78);
 		font-size: 0.875rem;
 		margin-bottom: 0.25rem;
+	}
+
+	.rodape-contato {
+		padding-left: 2rem;
+		border-left: 1px solid rgba(242, 242, 242, 0.24);
 	}
 
 	.links-contato {
@@ -63,12 +79,22 @@ const anoAtual = new Date().getFullYear();
 	}
 
 	.links-contato a {
-		color: var(--cor-texto-invertido);
+		color: var(--cor-destaque);
+		font-weight: 600;
 		text-decoration: none;
 	}
 
 	.links-contato a:hover {
-		color: var(--cor-texto-invertido-suave);
+		color: var(--cor-texto-invertido);
 		text-decoration: underline;
+	}
+
+	@media (max-width: 600px) {
+		.rodape-contato {
+			width: 100%;
+			padding: 1.5rem 0 0;
+			border-top: 1px solid rgba(242, 242, 242, 0.24);
+			border-left: 0;
+		}
 	}
 </style>

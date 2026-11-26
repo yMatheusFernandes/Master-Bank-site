@@ -17,3 +17,4 @@ que atendam às necessidades de cada cliente.
 - **Matheus Fernandes** — CEO e Desenvolvedor de Software Bancário.
 - **Guilherme Marques** — Analista de Suporte e Infraestrutura.
 - **Daniel Vorcaro** — Analista de Segurança da Informação.
+- **Luciano Hang** — Analista de Gestão e Estratégias Empresariais..
