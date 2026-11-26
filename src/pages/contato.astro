@@ -15,6 +15,16 @@ import { empresa } from '../data/empresa.js';
 				<p>Deseja construir uma solução de software sob medida para o seu negócio? Entre em contato com a {empresa.nome}!</p>
 			</div>
 
+			<figure class="imagem-empresa">
+				<img
+					src="/images/empresa.png"
+					alt="Fachada da sede da Master Bank Software Solutions"
+					width="1672"
+					height="941"
+					loading="eager"
+				/>
+			</figure>
+
 			<div class="grid-contato">
 				<Cartao>
 					<h2>Nossa Sede</h2>
@@ -60,9 +70,39 @@ import { empresa } from '../data/empresa.js';
 		color: var(--cor-texto-secundario);
 	}
 
+	.imagem-empresa {
+		position: relative;
+		width: 100%;
+		max-width: 720px;
+		overflow: hidden;
+		margin: 0 auto 2rem;
+		border: 1px solid var(--cor-borda);
+		border-radius: calc(var(--borda-raio) * 1.5);
+		background: var(--cor-primaria);
+		box-shadow: var(--sombra-cartao);
+	}
+
+	.imagem-empresa::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+		pointer-events: none;
+	}
+
+	.imagem-empresa img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		object-position: center;
+	}
+
 	.grid-contato {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 		gap: 2rem;
 	}
 
