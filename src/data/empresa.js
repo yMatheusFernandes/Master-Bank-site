@@ -67,7 +67,7 @@ export const empresa = {
     {
       nome: "Luciano Hang",
       cargo: "Analista de Gestão e Estratégias Empresariais.",
-      foto: "/images/Luciano-Hang.png",
+      foto: "/images/hang.png",
       alt: "Foto de Luciano Hang",
       descricao: "Responsável pela análise de estratégias empresariais, gestão de negócios e avaliação de oportunidades de mercado, contribuindo para o crescimento e desenvolvimento da empresa."
     }
